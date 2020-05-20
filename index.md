@@ -1,8 +1,3 @@
----
-output: 
-  html_document: 
-    self_contained: yes
----
 # Analysing TARA Oceans carbon export data using Tercen
 
 This document describes a walkthrough example of data analysis and visualisation using **Tercen**. We will analyse data from the TARA Oceans project, coming from this publication: [Guidi et al. (2016)]().
