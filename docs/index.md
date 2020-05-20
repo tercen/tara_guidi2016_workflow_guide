@@ -12,56 +12,93 @@ Our goal is to look at **how eukaryotic plankton lineages are associated to envi
 
 ### Creating a Tercen project
 
-* Click on New project
+First, we will create a Tercen project for our analyses.
+
+* **Start Tercen** and **log in**
+
+* Click on **New project**
 
 <center><img src="./img/project1.png" alt="" width="600"/></center>
 
-* Assign a team
+* **Assign the team** of your choice to the project
 
-* Give a name and description to this project
+* Give a **name** and **description** to this project, then click on **OK**
 
 <center><img src="./img/project2.png" alt="" width="400"/></center>
 
+* Your project is now created !
+
 ### Loading data into Tercen
+
+
 
 **1. Download the data onto your computer**
 
-We will use data from Guidi et al. (2016). It can be found here. Click on Download.
+We will use data from Guidi et al. (2016), more specifically the Supplementary Table 5. You can download data here: [LINK]. In this tutorial, we will just use the `SI5_eukaryotic_lineages.tsv` file.
 
 **2. Go back to Tercen and load the data**
 
 Now that we have the data on our computer, we can import it into Tercen.
 
-* Go to the project we named TARA Oceans
+* Go to the newly created project
+
+* Click on **New data set**
 
 <center><img src="./img/loaddata1.png" alt="" width="600"/></center>
 
+* **Upload** the `SI5_eukaryotic_lineages.tsv` file (**1**)
+
+* Give a **name** to the data set (**2**)
+
+* Click on **Next** (**3**)
+
 <center><img src="./img/loaddata2.png" alt="" width="400"/></center>
+
+* Check that the data set has been loaded properly and click on **Next**
 
 <center><img src="./img/loaddata3.png" alt="" width="400"/></center>
 
-<center><img src="./img/loaddata4.png" alt="" width="400"/></center>
+* HARD PART TO EXPLAIN and click on **OK**
 
+<center><img src="./img/loaddata4.png" alt="" width="400"/></center>
 
 ### Creating a workflow
 
+Now that we have created our dataset, we will **create a workflow** to analyse and visualise it.
+
+* Click on **New workflow**
+
+* Give a **name** to your workflow
+
 <center><img src="./img/loaddata5.png" alt="" width="600"/></center>
+
+* Your workflow appears now in your project. **Click on it**
+
+* Your are now on the workflow environment that is empty. We will now **add the data set** we uploaded before. **Right click anywhere in the blank area** and click on **Add**.
 
 <center><img src="./img/workflow1.png" alt="" width="600"/></center>
 
+* **Select Table** and click on **OK**.
+
 <center><img src="./img/workflow2.png" alt="" width="400"/></center>
+
+* **Select the data set** and click on **OK**.
 
 <center><img src="./img/workflow3.png" alt="" width="400"/></center>
 
+* Now the data set is ready to be used !
+
 ### Making a heatmap
 
-**1. Adding a data step to the workflow**
+To analyse our data we need to:
+
+**1. Add a data step to the workflow**
 
 <center><img src="./img/workflow4.png" alt="" width="600"/></center>
 
 <center><img src="./img/workflow5.png" alt="" width="400"/></center>
 
-**2. Making the heatmap projection**
+**2. Make the heatmap projection**
 
 Double click on the newly created data step. 
 
@@ -75,7 +112,7 @@ Here is a video of this important step:
 
 <center><iframe src="https://drive.google.com/file/d/1jPIbcZGZFpHAnPLrlawR6S489_vEYc3H/preview" width="600" height="400"></iframe></center>
 
-**3. Improving the heatmap by ordering rows and columns and adding dendrograms**
+**3. Improve the heatmap by ordering rows and columns and adding dendrograms**
 
 This heatmap look nice, but what if it would look much better if we could order rows and columns and add dendrograms!
 
