@@ -1,24 +1,33 @@
-# Data analysis workflow of TARA Oceans data using Tercen
+---
+output: 
+  html_document: 
+    self_contained: yes
+---
+# Analysing TARA Oceans carbon export data using Tercen
 
-This document describeds a walkthrough example of data analysis and visualisation using Tercen.
+This document describes a walkthrough example of data analysis and visualisation using **Tercen**. We will analyse data from the TARA Oceans project, coming from this publication: [Guidi et al. (2016)]().
 
-We will analyse data from the TARA Oceans project, from this publication.
+Our goal is to look at **how eukaryotic plankton lineages are associated to environmental parameters** such as **carbon export**. To do so, we will:
 
-Our goal is to:
+* create a new project in Tercen
 
-* Look at environmental variables and how plankton are distributed
+* upload the dataset containing the correlation of different lineages to environmental parameters
 
-* Second goal
+* create a heatmap representing this correlation
 
-## Create a Tercen project
+### Creating a Tercen project
 
 * Click on New project
+
+<center><img src="./img/project1.png" alt="" width="600"/></center>
 
 * Assign a team
 
 * Give a name and description to this project
 
-## Loading data into Tercen
+<center><img src="./img/project2.png" alt="" width="400"/></center>
+
+### Loading data into Tercen
 
 **1. Download the data onto your computer**
 
@@ -30,44 +39,48 @@ Now that we have the data on our computer, we can import it into Tercen.
 
 * Go to the project we named TARA Oceans
 
-![](./img/loaddata1.png)
+<center><img src="./img/loaddata1.png" alt="" width="600"/></center>
 
-![](./img/loaddata2.png)
+<center><img src="./img/loaddata2.png" alt="" width="400"/></center>
 
-![](./img/loaddata3.png)
+<center><img src="./img/loaddata3.png" alt="" width="400"/></center>
 
-![](./img/loaddata4.png)
-
-![](./img/loaddata5.png)
-
-## Data preprocessing
+<center><img src="./img/loaddata4.png" alt="" width="400"/></center>
 
 
-![](./img/workflow1.png)
+### Creating a workflow
 
-![](./img/workflow2.png)
+<center><img src="./img/loaddata5.png" alt="" width="600"/></center>
 
-![](./img/workflow3.png)
+<center><img src="./img/workflow1.png" alt="" width="600"/></center>
 
-![](./img/workflow4.png)
+<center><img src="./img/workflow2.png" alt="" width="400"/></center>
 
-![](./img/workflow5.png)
+<center><img src="./img/workflow3.png" alt="" width="400"/></center>
 
-## Making a heatmap
+### Making a heatmap
 
-**1. Adding a data step**
+**1. Adding a data step to the workflow**
 
-![](./img/datastep1.png)
+<center><img src="./img/workflow4.png" alt="" width="600"/></center>
 
-![](./img/datastep2.png)
+<center><img src="./img/workflow5.png" alt="" width="400"/></center>
 
 **2. Making the heatmap projection**
 
-<iframe src="https://drive.google.com/file/d/1jPIbcZGZFpHAnPLrlawR6S489_vEYc3H/preview" width="640" height="480"></iframe>
+Double click on the newly created data step. 
 
-### Clustering and dendrogram
+Drag and drop elements to make the heatmap projection.
 
-**3. Improving the heatmap**
+<center><img src="./img/datastep1.png" alt="" width="600"/></center>
+
+<center><img src="./img/datastep2.png" alt="" width="600"/></center>
+
+Here is a video of this important step:
+
+<center><iframe src="https://drive.google.com/file/d/1jPIbcZGZFpHAnPLrlawR6S489_vEYc3H/preview" width="600" height="400"></iframe></center>
+
+**3. Improving the heatmap by ordering rows and columns and adding dendrograms**
 
 This heatmap look nice, but what if it would look much better if we could order rows and columns and add dendrograms!
 
@@ -77,7 +90,7 @@ On the left, click to add an operator:
 
 Pick `shiny_heatmap_operator`
 
-![](./img/operator1.png)
+<center><img src="./img/operator1.png" alt="" width="600"/></center>
 
 
 Tercen includes two types of operators: shiny and regular ones. Shiny operators are mostly designed to visualise data in a given step rather than perform a specific computation.
@@ -86,8 +99,6 @@ When the operator is loaded, you can see a tab appeared on the left: **Operator 
 
 The operator view appeared, as well as our heatmap with a dendrogram!
 
-![](./img/operator2.png)
+<center><img src="./img/operator2.png" alt="" width="600"/></center>
 
-## Making a world map
-
-Coming soon.
+*Et voilà!*
