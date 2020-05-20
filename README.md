@@ -1,4 +1,4 @@
-# Data analysis workflow of TARA Oceans data using Tercen
+# MAKE-ME tutorial for a tercen workflow of TARA (gorsky2016)
 
 The tutorial to analyse TARA Oceans data using Tercen can be found here:
 
