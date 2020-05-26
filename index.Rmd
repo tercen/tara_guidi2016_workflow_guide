@@ -17,7 +17,11 @@ description: "This is a guide on how to create a workflow in Tercen"
 
 Tercen is inspired by the Tara Ocean Foundation. Tara oceanic expeditions aim is to study and understand the impact of climate change and the ecological crisis facing the world's oceans. Tara datasets and analysis are made open simple and accessible to the community!
 
-You can use the rapid, flexible and interactive features of Tercen. Now go to the tercen open project to browse and interact with a tara dataset for plankton carbon emission.
+Using data from this project we will answer the following questions:
+
+* Which eukaryotic lineages are reponsible for carbon export?
+
+* How are eukaryotic lineages and their association with carbon export distributed across space?
 
 ## Data {-}
 
@@ -43,13 +47,7 @@ Throughout this tutorial we will use two tables coming from this study:
 
 * The Supplementary Table 5 containing different eukaryotic lineages and their correlations as computed using sparse PLS regression (sPLS)
 
-## Questions {-}
 
-Using these data we will answer the following questions:
-
-* Which eukaryotic lineages are reponsible for carbon export?
-
-* How are eukaryotic lineages and their association with carbon export distributed across space?
 
 ## Methods {-}
 
