@@ -12,7 +12,7 @@ Our goal is to look at **how eukaryotic plankton lineages are associated to envi
 
 * create a heatmap representing this correlation
 
-## Creating a Tercen project
+## Creating a Tercen project {-}
 
 First, we will create a Tercen project for our analyses.
 
@@ -30,7 +30,7 @@ First, we will create a Tercen project for our analyses.
 
 * Your project is now created !
 
-## Loading data into Tercen
+## Loading data into Tercen {-}
 
 We will use data from Guidi et al. (2016), more specifically the Supplementary Table 5.
 
@@ -70,7 +70,7 @@ Now that we have the data on our computer, we can import it into Tercen.
 
 * The data set is now uploaded to Tercen!
 
-## Creating a workflow
+## Creating a workflow {-}
 
 Now that we have created our dataset, we will **create a workflow** to analyse and visualise it.
 
@@ -96,7 +96,7 @@ Now that we have created our dataset, we will **create a workflow** to analyse a
 
 * Now the data set is ready to be used !
 
-### Making a heatmap
+## Making a heatmap {-}
 
 To analyse our data we need to:
 
@@ -150,3 +150,6 @@ Tercen includes a **heatmap operator** (called _Shiny Heatmap_) to make such a r
 
 ---
 
+## Making a world map {-}
+
+Coming soon.

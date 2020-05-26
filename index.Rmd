@@ -11,15 +11,21 @@ github-repo: tercen/tara_gorsky2016_workflow_documentation
 description: "This is a guide on how to create a workflow in Tercen"
 ---
 
-# Introduction {-}
+# Introduction
 
-This guide outlines how to design, develop and share apps for __Tercen__.
- 
+## Goals {-}
 
-* __Why read this guide?__ :
-Your curious or wish to build an app for Tercen then this is the guide.
+Tercen is inspired by the Tara Ocean Foundation. Tara oceanic expeditions aim is to study and understand the impact of climate change and the ecological crisis facing the world's oceans. Tara datasets and analysis are made open simple and accessible to the community!
 
-* __Motivation__:  
-Tercen  promotes collaboration for data analysis. Not everyone can code or even wants to,  but everyone should benefit from the explosion of data and code currently taking place.
-Tercen allows non programmers (e.g. biologists) to explore their data and allows programmers (e.g. bioinformaticians) to upload their code (or web-apps) for the biologist to use. By offering this services we believe biologist get empowered and can claim back control of their data. The bioinformatician gets liberated from the operational details and  day to day analysis demands from the biologist. This is summed up with the phrase:
+You can use the rapid, flexible and interactive features of Tercen. Now go to the tercen open project to browse and interact with a tara dataset for plankton carbon emission.
 
+## Data and methods {-}
+
+The data comes from the TARA Oceans project, coming from this publication: [Guidi et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4851848/):
+
+> Guidi, L., Chaffron, S., Bittner, L., Eveillard, D., Larhlimi, A., Roux, S., ... & Coelho, L. P. (2016). Plankton networks driving carbon export in the oligotrophic ocean. Nature, 532(7600), 465-470.
+
+* Description of environmental parameters
+* Description of eukaryotic lineages
+* Heatmap creation: clustering and representationm dendrogram
+* Map creation
