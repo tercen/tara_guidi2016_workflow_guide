@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 1 Analysing TARA Oceans carbon export data using Tercen | TARA OCeanas data analysis using Tercen</title>
+  <meta name="description" content="This is a guide on how to create a workflow in Tercen" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 1 Analysing TARA Oceans carbon export data using Tercen | TARA OCeanas data analysis using Tercen" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a guide on how to create a workflow in Tercen" />
+  <meta name="github-repo" content="tercen/tara_gorsky2016_workflow_documentation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 1 Analysing TARA Oceans carbon export data using Tercen | TARA OCeanas data analysis using Tercen" />
+  
+  <meta name="twitter:description" content="This is a guide on how to create a workflow in Tercen" />
+  
+
+<meta name="author" content="Tercen support document" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="how-to-copy-the-tara-oceans-workflow.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html"><i class="fa fa-check"></i><b>1</b> Analysing TARA Oceans carbon export data using Tercen</a><ul>
+<li class="chapter" data-level="1.1" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#creating-a-tercen-project"><i class="fa fa-check"></i><b>1.1</b> Creating a Tercen project</a></li>
+<li class="chapter" data-level="1.2" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#loading-data-into-tercen"><i class="fa fa-check"></i><b>1.2</b> Loading data into Tercen</a></li>
+<li class="chapter" data-level="1.3" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#creating-a-workflow"><i class="fa fa-check"></i><b>1.3</b> Creating a workflow</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#making-a-heatmap"><i class="fa fa-check"></i><b>1.3.1</b> Making a heatmap</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="how-to-copy-the-tara-oceans-workflow.html"><a href="how-to-copy-the-tara-oceans-workflow.html"><i class="fa fa-check"></i><b>2</b> How to copy the TARA Oceans workflow</a><ul>
+<li class="chapter" data-level="2.1" data-path="how-to-copy-the-tara-oceans-workflow.html"><a href="how-to-copy-the-tara-oceans-workflow.html#exploring-existing-public-projects"><i class="fa fa-check"></i><b>2.1</b> Exploring existing public projects</a></li>
+<li class="chapter" data-level="2.2" data-path="how-to-copy-the-tara-oceans-workflow.html"><a href="how-to-copy-the-tara-oceans-workflow.html#copying-a-project-to-your-own-tercen-environment"><i class="fa fa-check"></i><b>2.2</b> Copying a project to your own Tercen environment</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">TARA OCeanas data analysis using Tercen</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="analysing-tara-oceans-carbon-export-data-using-tercen" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Analysing TARA Oceans carbon export data using Tercen</h1>
+<p>This document describes a walkthrough example of data analysis and visualisation using <strong>Tercen</strong>. We will analyse data from the TARA Oceans project, coming from this publication: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4851848/">Guidi et al. (2016)</a>:</p>
+<blockquote>
+<p>Guidi, L., Chaffron, S., Bittner, L., Eveillard, D., Larhlimi, A., Roux, S., … &amp; Coelho, L. P. (2016). Plankton networks driving carbon export in the oligotrophic ocean. Nature, 532(7600), 465-470.</p>
+</blockquote>
+<p>Our goal is to look at <strong>how eukaryotic plankton lineages are associated to environmental parameters</strong> such as <strong>carbon export</strong>. To do so, we will:</p>
+<ul>
+<li><p>create a new project in Tercen</p></li>
+<li><p>upload the dataset containing the correlation of different lineages to environmental parameters</p></li>
+<li><p>create a heatmap representing this correlation</p></li>
+</ul>
+<div id="creating-a-tercen-project" class="section level2">
+<h2><span class="header-section-number">1.1</span> Creating a Tercen project</h2>
+<p>First, we will create a Tercen project for our analyses.</p>
+<ul>
+<li><p><strong>Start Tercen</strong> and <strong>log in</strong></p></li>
+<li><p>Click on <strong>New project</strong></p></li>
+</ul>
+<center>
+<img src="img/project1.png" alt="" width="600"/>
+</center>
+<ul>
+<li><p><strong>Assign the team</strong> of your choice to the project</p></li>
+<li><p>Give a <strong>name</strong> and <strong>description</strong> to this project, then click on <strong>OK</strong></p></li>
+</ul>
+<center>
+<img src="img/project2.png" alt="" width="400"/>
+</center>
+<ul>
+<li>Your project is now created !</li>
+</ul>
+</div>
+<div id="loading-data-into-tercen" class="section level2">
+<h2><span class="header-section-number">1.2</span> Loading data into Tercen</h2>
+<p>We will use data from Guidi et al. (2016), more specifically the Supplementary Table 5.</p>
+<p><strong>1. Download the data onto your computer</strong></p>
+<p>You can find the data here: <a href="https://github.com/tercen/tara_gorsky2016_data" class="uri">https://github.com/tercen/tara_gorsky2016_data</a>. In this tutorial, we will just use the <code>SI5_eukaryotic_lineages.tsv</code> file.</p>
+<p><strong>2. Go back to Tercen and load the data</strong></p>
+<p>Now that we have the data on our computer, we can import it into Tercen.</p>
+<ul>
+<li><p>Go to the newly created project</p></li>
+<li><p>Click on <strong>New data set</strong></p></li>
+</ul>
+<center>
+<img src="img/loaddata1.png" alt="" width="600"/>
+</center>
+<ul>
+<li><p><strong>Upload</strong> the <code>SI5_eukaryotic_lineages.tsv</code> file (<strong>1</strong>)</p></li>
+<li><p>Give a <strong>name</strong> to the data set (<strong>2</strong>)</p></li>
+<li><p>Click on <strong>Next</strong> (<strong>3</strong>)</p></li>
+</ul>
+<center>
+<img src="img/loaddata2.png" alt="" width="400"/>
+</center>
+<ul>
+<li>Check that the data set has been loaded properly and click on <strong>Next</strong></li>
+</ul>
+<center>
+<img src="img/loaddata3.png" alt="" width="400"/>
+</center>
+<ul>
+<li><p>Give a name to the values (here, <code>measurement</code>) and variables (here, <code>environmental_variable</code>) (<strong>1</strong>)</p></li>
+<li><p>Check all the variables (<strong>2</strong>)</p></li>
+<li><p>Uncheck the ones that are not part of the environmental parameters of interest (here, Latitude and Longitude) (<strong>3</strong>) and click on <strong>OK</strong></p></li>
+</ul>
+<center>
+<img src="img/loaddata4.png" alt="" width="400"/>
+</center>
+<ul>
+<li>The data set is now uploaded to Tercen!</li>
+</ul>
+</div>
+<div id="creating-a-workflow" class="section level2">
+<h2><span class="header-section-number">1.3</span> Creating a workflow</h2>
+<p>Now that we have created our dataset, we will <strong>create a workflow</strong> to analyse and visualise it.</p>
+<ul>
+<li><p>Click on <strong>New workflow</strong></p></li>
+<li><p>Give a <strong>name</strong> to your workflow</p></li>
+</ul>
+<center>
+<img src="img/loaddata5.png" alt="" width="600"/>
+</center>
+<ul>
+<li><p>Your workflow appears now in your project. <strong>Click on it</strong></p></li>
+<li><p>Your are now on the workflow environment that is empty. We will now <strong>add the data set</strong> we uploaded before. <strong>Right click anywhere in the blank area</strong> and click on <strong>Add</strong>.</p></li>
+</ul>
+<center>
+<img src="img/workflow1.png" alt="" width="600"/>
+</center>
+<ul>
+<li><strong>Select Table</strong> and click on <strong>OK</strong>.</li>
+</ul>
+<center>
+<img src="img/workflow2.png" alt="" width="400"/>
+</center>
+<ul>
+<li><strong>Select the data set</strong> and click on <strong>OK</strong>.</li>
+</ul>
+<center>
+<img src="img/workflow3.png" alt="" width="400"/>
+</center>
+<ul>
+<li>Now the data set is ready to be used !</li>
+</ul>
+<div id="making-a-heatmap" class="section level3">
+<h3><span class="header-section-number">1.3.1</span> Making a heatmap</h3>
+<p>To analyse our data we need to:</p>
+<p><strong>1. Add a data step to the workflow</strong></p>
+<ul>
+<li><strong>Right click</strong> on the data set and select <strong>Add</strong></li>
+</ul>
+<center>
+<img src="img/workflow4.png" alt="" width="600"/>
+</center>
+<ul>
+<li>Select <strong>Data step</strong></li>
+</ul>
+<center>
+<img src="img/workflow5.png" alt="" width="400"/>
+</center>
+<p><strong>2. Make the heatmap projection</strong></p>
+<ul>
+<li>Double click on the newly created <strong>data step</strong></li>
+</ul>
+<center>
+<img src="img/datastep1.png" alt="" width="600"/>
+</center>
+<ul>
+<li>Drag and drop elements to make the heatmap projection as in the following video:</li>
+</ul>
+<center>
+<iframe src="https://drive.google.com/file/d/1jPIbcZGZFpHAnPLrlawR6S489_vEYc3H/preview" width="600" height="400">
+</iframe>
+</center>
+<ul>
+<li>We now have our first heatmap, our data projection should look like this:</li>
+</ul>
+<center>
+<img src="img/datastep2.png" alt="" width="600"/>
+</center>
+<p><strong>3. Improve the heatmap by ordering rows and columns and adding dendrograms</strong></p>
+<p>This heatmap looks nice, but it would be better if we could order rows and columns and add dendrograms! That way we could see which species and environmental parameters cluster together.</p>
+<p>Tercen includes a <strong>heatmap operator</strong> (called <em>Shiny Heatmap</em>) to make such a representation.</p>
+<ul>
+<li><p>In the sidebar, click on the plus sign to <strong>add an operator</strong> (<strong>1</strong>)</p></li>
+<li><p>Pick the <code>shiny_heatmap_operator</code>. It appears now the data step environment (<strong>2</strong>)</p></li>
+<li><p>Then click on <strong>Operator view</strong> tab on the left to see the result (<strong>3</strong>)</p></li>
+</ul>
+<hr />
+<center>
+<img src="img/operator1.png" alt="" width="600"/>
+</center>
+<hr />
+<p><em>Et voilà!</em> The operator view appeared, as well as our heatmap with a dendrogram:</p>
+<hr />
+<center>
+<img src="img/operator2.png" alt="" width="600"/>
+</center>
+<hr />
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="how-to-copy-the-tara-oceans-workflow.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

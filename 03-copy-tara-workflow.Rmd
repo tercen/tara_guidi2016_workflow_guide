@@ -1,0 +1,17 @@
+# How to copy the TARA Oceans workflow
+
+This document describes a how to copy a public workflow in **Tercen**.
+
+## Exploring existing public projects
+
+<center><img src="./img/COPY1.PNG" alt="" width="600"/></center>
+
+<center><img src="./img/COPY2.PNG" alt="" width="600"/></center>
+
+## Copying a project to your own Tercen environment
+
+<center><img src="./img/COPY2.PNG" alt="" width="600"/></center>
+
+<center><img src="./img/COPY3.PNG" alt="" width="400"/></center>
+
+<center><img src="./img/COPY4.PNG" alt="" width="600"/></center>
