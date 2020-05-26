@@ -128,7 +128,9 @@ To analyse our data we need to:
 
 This heatmap looks nice, but it would be better if we could order rows and columns and add dendrograms! That way we could see which species and environmental parameters cluster together.
 
-Tercen includes a **heatmap operator** (called _Shiny Heatmap_) to make such a representation.
+Tercen includes a **heatmap operator** (called _Shiny Heatmap_) to make such a representation. 
+
+In short, operators take as input Tercen projections and return computations and views. In our case, we call it a __Shiny__ operator as it is based on the __R/Shiny framework__ designed to produce interactive visualisations such as this heatmap.
 
 * In the sidebar, click on the plus sign to **add an operator** (**1**)
 

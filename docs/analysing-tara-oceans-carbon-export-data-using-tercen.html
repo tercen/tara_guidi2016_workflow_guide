@@ -66,7 +66,9 @@
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#goals"><i class="fa fa-check"></i>Goals</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-and-methods"><i class="fa fa-check"></i>Data and methods</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i>Data</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#questions"><i class="fa fa-check"></i>Questions</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#methods"><i class="fa fa-check"></i>Methods</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html"><i class="fa fa-check"></i><b>2</b> Analysing TARA Oceans carbon export data using Tercen</a><ul>
 <li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#creating-a-tercen-project"><i class="fa fa-check"></i>Creating a Tercen project</a></li>
@@ -241,6 +243,7 @@
 <p><strong>3. Improve the heatmap by ordering rows and columns and adding dendrograms</strong></p>
 <p>This heatmap looks nice, but it would be better if we could order rows and columns and add dendrograms! That way we could see which species and environmental parameters cluster together.</p>
 <p>Tercen includes a <strong>heatmap operator</strong> (called <em>Shiny Heatmap</em>) to make such a representation.</p>
+<p>In short, operators take as input Tercen projections and return computations and views. In our case, we call it a <strong>Shiny</strong> operator as it is based on the <strong>R/Shiny framework</strong> designed to produce interactive visualisations such as this heatmap.</p>
 <ul>
 <li><p>In the sidebar, click on the plus sign to <strong>add an operator</strong> (<strong>1</strong>)</p></li>
 <li><p>Pick the <code>shiny_heatmap_operator</code>. It appears now the data step environment (<strong>2</strong>)</p></li>

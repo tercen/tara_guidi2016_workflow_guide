@@ -19,13 +19,46 @@ Tercen is inspired by the Tara Ocean Foundation. Tara oceanic expeditions aim is
 
 You can use the rapid, flexible and interactive features of Tercen. Now go to the tercen open project to browse and interact with a tara dataset for plankton carbon emission.
 
-## Data and methods {-}
+## Data {-}
 
 The data comes from the TARA Oceans project, coming from this publication: [Guidi et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4851848/):
 
 > Guidi, L., Chaffron, S., Bittner, L., Eveillard, D., Larhlimi, A., Roux, S., ... & Coelho, L. P. (2016). Plankton networks driving carbon export in the oligotrophic ocean. Nature, 532(7600), 465-470.
 
-* Description of environmental parameters
-* Description of eukaryotic lineages
-* Heatmap creation: clustering and representationm dendrogram
-* Map creation
+Throughout this tutorial we will use two tables coming from this study:
+
+* The Supplementary Table 4 containing environmental data for each sample:
+  + `Sample`:	Sample ID
+  + `Latitude`:	Latitude 
+  + `Longitude`:	Longitude
+  + `Salinity`:	Salinity 
+  + `NO2 (umol/L)`:	NO2 concentration
+  + `PO4 (umol/L)`:	PO4 concentration
+  + `NO2NO3 (umol/L)`:	NO2NO3 concentration
+  + `Mean Chloro HPLC adjusted (mg Chl/m3)`:	Chlorophyll concentration
+  + `Mean Temperature deg C`:	Temperature in degree Celsius
+  + `Mean Oxygen adjusted (umol/Kg)`:	Oxygen concentration
+  + `Mean Flux at 150m`:	Carbon flux at 150m
+  + `NPP 8d VGPM (mgC/m2/day)`:	NPP weekly average (VGPM model)
+
+* The Supplementary Table 5 containing different eukaryotic lineages and their correlations as computed using sparse PLS regression (sPLS)
+
+## Questions {-}
+
+Using these data we will answer the following questions:
+
+* Which eukaryotic lineages are reponsible for carbon export?
+
+* How are eukaryotic lineages and their association with carbon export distributed across space?
+
+## Methods {-}
+
+To answer these questions, we will:
+
+**1. Create a heatmap**
+
+  + It will represent the correlation between the presence of each eukaryotic lineages and environmental parameters described above
+  
+  + We will cluster eukaryotic lineages to see whether we find similarities between them and which one are export the most carbon
+
+**2. Look at the distribution of these variables on a world map**

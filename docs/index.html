@@ -66,7 +66,9 @@
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#goals"><i class="fa fa-check"></i>Goals</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data-and-methods"><i class="fa fa-check"></i>Data and methods</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i>Data</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#questions"><i class="fa fa-check"></i>Questions</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#methods"><i class="fa fa-check"></i>Methods</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html"><i class="fa fa-check"></i><b>2</b> Analysing TARA Oceans carbon export data using Tercen</a><ul>
 <li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#creating-a-tercen-project"><i class="fa fa-check"></i>Creating a Tercen project</a></li>
@@ -107,18 +109,49 @@
 <p>Tercen is inspired by the Tara Ocean Foundation. Tara oceanic expeditions aim is to study and understand the impact of climate change and the ecological crisis facing the world’s oceans. Tara datasets and analysis are made open simple and accessible to the community!</p>
 <p>You can use the rapid, flexible and interactive features of Tercen. Now go to the tercen open project to browse and interact with a tara dataset for plankton carbon emission.</p>
 </div>
-<div id="data-and-methods" class="section level2 unnumbered">
-<h2>Data and methods</h2>
+<div id="data" class="section level2 unnumbered">
+<h2>Data</h2>
 <p>The data comes from the TARA Oceans project, coming from this publication: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4851848/">Guidi et al. (2016)</a>:</p>
 <blockquote>
 <p>Guidi, L., Chaffron, S., Bittner, L., Eveillard, D., Larhlimi, A., Roux, S., … &amp; Coelho, L. P. (2016). Plankton networks driving carbon export in the oligotrophic ocean. Nature, 532(7600), 465-470.</p>
 </blockquote>
+<p>Throughout this tutorial we will use two tables coming from this study:</p>
 <ul>
-<li>Description of environmental parameters</li>
-<li>Description of eukaryotic lineages</li>
-<li>Heatmap creation: clustering and representationm dendrogram</li>
-<li>Map creation</li>
+<li>The Supplementary Table 4 containing environmental data for each sample:
+<ul>
+<li><code>Sample</code>: Sample ID</li>
+<li><code>Latitude</code>: Latitude</li>
+<li><code>Longitude</code>: Longitude</li>
+<li><code>Salinity</code>: Salinity</li>
+<li><code>NO2 (umol/L)</code>: NO2 concentration</li>
+<li><code>PO4 (umol/L)</code>: PO4 concentration</li>
+<li><code>NO2NO3 (umol/L)</code>: NO2NO3 concentration</li>
+<li><code>Mean Chloro HPLC adjusted (mg Chl/m3)</code>: Chlorophyll concentration</li>
+<li><code>Mean Temperature deg C</code>: Temperature in degree Celsius</li>
+<li><code>Mean Oxygen adjusted (umol/Kg)</code>: Oxygen concentration</li>
+<li><code>Mean Flux at 150m</code>: Carbon flux at 150m</li>
+<li><code>NPP 8d VGPM (mgC/m2/day)</code>: NPP weekly average (VGPM model)</li>
+</ul></li>
+<li>The Supplementary Table 5 containing different eukaryotic lineages and their correlations as computed using sparse PLS regression (sPLS)</li>
 </ul>
+</div>
+<div id="questions" class="section level2 unnumbered">
+<h2>Questions</h2>
+<p>Using these data we will answer the following questions:</p>
+<ul>
+<li><p>Which eukaryotic lineages are reponsible for carbon export?</p></li>
+<li><p>How are eukaryotic lineages and their association with carbon export distributed across space?</p></li>
+</ul>
+</div>
+<div id="methods" class="section level2 unnumbered">
+<h2>Methods</h2>
+<p>To answer these questions, we will:</p>
+<p><strong>1. Create a heatmap</strong></p>
+<ul>
+<li><p>It will represent the correlation between the presence of each eukaryotic lineages and environmental parameters described above</p></li>
+<li><p>We will cluster eukaryotic lineages to see whether we find similarities between them and which one are export the most carbon</p></li>
+</ul>
+<p><strong>2. Look at the distribution of these variables on a world map</strong></p>
 
 </div>
 </div>
