@@ -1,5 +1,5 @@
 ---
-title: "TARA OCeanas data analysis using Tercen"
+title: "TARA Oceans data analysis using Tercen"
 author: "Tercen support document"
 site: bookdown::bookdown_site
 documentclass: book
