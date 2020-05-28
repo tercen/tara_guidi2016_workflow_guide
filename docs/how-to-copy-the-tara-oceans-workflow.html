@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 How to copy the TARA Oceans workflow | TARA Oceans data analysis using Tercen</title>
+  <meta name="description" content="This is a guide on how to create a workflow in Tercen" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 How to copy the TARA Oceans workflow | TARA Oceans data analysis using Tercen" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a guide on how to create a workflow in Tercen" />
+  <meta name="github-repo" content="tercen/tara_gorsky2016_workflow_documentation" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 How to copy the TARA Oceans workflow | TARA Oceans data analysis using Tercen" />
+  
+  <meta name="twitter:description" content="This is a guide on how to create a workflow in Tercen" />
+  
+
+<meta name="author" content="Tercen support document" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="analysing-tara-oceans-carbon-export-data-using-tercen.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#goals"><i class="fa fa-check"></i>Goals</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#data"><i class="fa fa-check"></i>Data</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#methods"><i class="fa fa-check"></i>Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html"><i class="fa fa-check"></i><b>2</b> Analysing TARA Oceans carbon export data using Tercen</a><ul>
+<li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#creating-a-tercen-project"><i class="fa fa-check"></i>Creating a Tercen project</a></li>
+<li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#loading-data-into-tercen"><i class="fa fa-check"></i>Loading data into Tercen</a></li>
+<li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#creating-a-workflow"><i class="fa fa-check"></i>Creating a workflow</a></li>
+<li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#making-a-heatmap"><i class="fa fa-check"></i>Making a heatmap</a></li>
+<li class="chapter" data-level="" data-path="analysing-tara-oceans-carbon-export-data-using-tercen.html"><a href="analysing-tara-oceans-carbon-export-data-using-tercen.html#making-a-world-map"><i class="fa fa-check"></i>Making a world map</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="how-to-copy-the-tara-oceans-workflow.html"><a href="how-to-copy-the-tara-oceans-workflow.html"><i class="fa fa-check"></i><b>3</b> How to copy the TARA Oceans workflow</a><ul>
+<li class="chapter" data-level="" data-path="how-to-copy-the-tara-oceans-workflow.html"><a href="how-to-copy-the-tara-oceans-workflow.html#exploring-existing-public-projects"><i class="fa fa-check"></i>Exploring existing public projects</a></li>
+<li class="chapter" data-level="" data-path="how-to-copy-the-tara-oceans-workflow.html"><a href="how-to-copy-the-tara-oceans-workflow.html#copying-a-project-to-your-own-tercen-environment"><i class="fa fa-check"></i>Copying a project to your own Tercen environment</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">TARA Oceans data analysis using Tercen</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="how-to-copy-the-tara-oceans-workflow" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> How to copy the TARA Oceans workflow</h1>
+<p>This document describes a how to copy a public workflow in <strong>Tercen</strong>.</p>
+<div id="exploring-existing-public-projects" class="section level2 unnumbered">
+<h2>Exploring existing public projects</h2>
+<ul>
+<li>When your are on <a href="https://stage.tercen.com/" class="uri">https://stage.tercen.com/</a>, you can click on the <code>Explore</code> button to access the list of public projects (alternatively you can directly go to <a href="https://stage.tercen.com/explore" class="uri">https://stage.tercen.com/explore</a>)</li>
+</ul>
+<center>
+<img src="img/COPY1.PNG" alt="" width="600"/>
+</center>
+<ul>
+<li>You will then be brougth to a page containing all existing public projects</li>
+</ul>
+<center>
+<img src="img/COPY2.PNG" alt="" width="600"/>
+</center>
+</div>
+<div id="copying-a-project-to-your-own-tercen-environment" class="section level2 unnumbered">
+<h2>Copying a project to your own Tercen environment</h2>
+<ul>
+<li><p>Tercen gives you the possibility to copy (<em>clone</em>) an existing public project to your own environment</p></li>
+<li><p>To do so, click on the <em>clone</em> button:</p></li>
+</ul>
+<center>
+<img src="img/COPY2.PNG" alt="" width="600"/>
+</center>
+<ul>
+<li>Then, select the team you want to assign to the project and click on <code>OK</code></li>
+</ul>
+<center>
+<img src="img/COPY3.PNG" alt="" width="350"/>
+</center>
+<ul>
+<li>Now the project appears in your own environment, you can start using and modifying it as you wish!</li>
+</ul>
+<center>
+<img src="img/COPY4.PNG" alt="" width="600"/>
+</center>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="analysing-tara-oceans-carbon-export-data-using-tercen.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+# How to copy the TARA Oceans workflow
+
+This document describes a how to copy a public workflow in **Tercen**.
+
+## Exploring existing public projects {-}
+
+* When your are on https://stage.tercen.com/, you can click on the `Explore` button to access the list of public projects (alternatively you can directly go to https://stage.tercen.com/explore)
+
+<center><img src="./img/COPY1.PNG" alt="" width="600"/></center>
+
+* You will then be brougth to a page containing all existing public projects
+
+<center><img src="./img/COPY2.PNG" alt="" width="600"/></center>
+
+## Copying a project to your own Tercen environment {-}
+
+* Tercen gives you the possibility to copy (_clone_) an existing public project to your own environment
+
+* To do so, click on the _clone_ button:
+
+<center><img src="./img/COPY2.PNG" alt="" width="600"/></center>
+
+* Then, select the team you want to assign to the project and click on `OK`
+
+<center><img src="./img/COPY3.PNG" alt="" width="350"/></center>
+
+* Now the project appears in your own environment, you can start using and modifying it as you wish!
+
+<center><img src="./img/COPY4.PNG" alt="" width="600"/></center>

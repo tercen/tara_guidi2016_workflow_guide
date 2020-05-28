@@ -1,5 +1,11 @@
-# MAKE-ME tutorial for a tercen workflow of TARA (gorsky2016)
+# Turorial for TARA Oceans data analysis using Tercen
 
-The tutorial to analyse TARA Oceans data using Tercen can be found here:
+This repository contains a guide on how to analyse TARA Oceans data using Tercen. It is composed of:
 
-https://tercen.github.io/tara_gorsky2016_workflow/
+* A tutorial on how to create an analysis workflow using Tercen
+
+* A tutorial on how to copy a public project using Tercen
+
+The online version can be found here:
+
+https://tercen.github.io/tara_gorsky2016_workflow_guide/
