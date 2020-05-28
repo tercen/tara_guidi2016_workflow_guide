@@ -1,4 +1,4 @@
-# TARA Oceans data analysis using Tercen
+# Turorial for TARA Oceans data analysis using Tercen
 
 This repository contains a guide on how to analyse TARA Oceans data using Tercen. It is composed of:
 
