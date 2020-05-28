@@ -36,7 +36,7 @@ We will use data from Guidi et al. (2016), more specifically the Supplementary T
 
 **1. Download the data onto your computer**
 
-You can find the data here: https://github.com/tercen/tara_gorsky2016_data. In this tutorial, we will just use the `SI5_eukaryotic_lineages.tsv` file.
+You can find the data here: https://github.com/tercen/tara_guidi2016_data. In this tutorial, we will just use the `SI5_eukaryotic_lineages.tsv` file.
 
 **2. Go back to Tercen and load the data**
 

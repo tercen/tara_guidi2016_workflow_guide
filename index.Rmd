@@ -7,7 +7,7 @@ output: bookdown::gitbook
 bibliography: 
 biblio-style: apalike
 link-citations: yes
-github-repo: tercen/tara_gorsky2016_workflow_documentation
+github-repo: tercen/tara_guidi2016_workflow_guide
 description: "This is a guide on how to create a workflow in Tercen"
 ---
 
