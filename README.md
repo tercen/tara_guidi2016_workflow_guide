@@ -8,7 +8,7 @@ This repository contains a guide on how to analyse TARA Oceans data using Tercen
 
 The online version can be found here:
 
-https://tercen.github.io/tara_gorsky2016_workflow_guide/
+https://tercen.github.io/tara_guidi2016_workflow_guide/
 
 The data comes from the study of [Guidi et al. (2016)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4851848/):
 
