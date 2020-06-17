@@ -96,5 +96,5 @@ To answer these questions, we will:
 **3. Look at the distribution of these variables on a world map**
 
   + We will apply another **Tercen operator** to represent environmental parameters on a world map.
-
-WIP.
+  
+  + This map will allow us to get an idea on how environmental parameters are distributed across space.
