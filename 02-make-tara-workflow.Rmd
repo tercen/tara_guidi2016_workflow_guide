@@ -154,4 +154,44 @@ In short, operators take as input Tercen projections and return computations and
 
 ## Making a world map {-}
 
-Coming soon.
+**1. Add the data and a data step to the workflow**
+
+* **Right click** on the blank area and select **Add**
+
+* Add the `Environmental_data` data table to the workflow
+
+<center><img src="./img/worldmap1.png" alt="" width="400"/></center>
+
+* **Right click** on the data set and select **Add**
+
+* Select **Data step**
+
+**2. Make the map projection**
+
+* Double click on the newly created **data step**
+
+* Drag and drop elements to make the worldmap projection: . We now have our first heatmap, our data projection should look like this:
+
+---
+
+<center><img src="./img/worldmap2.png" alt="" width="600"/></center>
+
+---
+
+**3. Make a better looking worldmap**
+
+We can already see the data we want to see, however it would be much better with a base map. Tercen includes a **worldmap operator** (called _Worldmap Shiny_) to make such a representation. 
+
+In short, operators take as input Tercen projections and return computations and views. In our case, we call it a __Shiny__ operator as it is based on the __R/Shiny framework__ designed to produce interactive visualisations such as this worldmap.
+
+* In the sidebar, click on the plus sign to **add an operator**
+
+* Pick the `Worldmap` operator. It appears now the data step environment
+
+* Then click on **Operator view** tab on the left to see the result:
+
+---
+
+<center><img src="./img/worldmap3.png" alt="" width="600"/></center>
+
+---
